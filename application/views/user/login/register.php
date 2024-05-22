@@ -45,21 +45,26 @@
 										<h1 class="h4 text-gray-900 mb-4"><b>Phone Book System</b></h1>
 										<h1 class="h4 text-gray-900 mb-4">Register</h1>
 									</div>
-									<form id="registerForm">
+									<form id="registerForm" method="POST" action="<?= base_url() ?>user/register">
 										<div class="form-group">
-											<input name="name" class="form-control form-control-user" placeholder="Name">
+											<input name="name" class="form-control form-control-user" placeholder="Surname">
+											<?= form_error('name','<small class="text-danger pl-1">','</small>')?? ''; ?>
 										</div>
                                         <div class="form-group">
 											<input type="number" name="contact" class="form-control form-control-user"  placeholder="Contact">
+											<?= form_error('contact','<small class="text-danger pl-1">','</small>')?? ''; ?>
 										</div>
                                         <div class="form-group">
-											<input type="email" name="email" class="form-control form-control-user" aria-describedby="emailHelp" placeholder="Email">
+											<input type="email" name="email" class="form-control form-control-user" placeholder="Username/Email">
+											<?= form_error('email','<small class="text-danger pl-1">','</small>')?? ''; ?>
 										</div>
 										<div class="form-group">
 											<input type="password" name="password" class="form-control form-control-user" placeholder="Password">
+											<?= form_error('password','<small class="text-danger pl-1">','</small>')?? ''; ?>
 										</div>
                                         <div class="form-group">
-											<input type="password" name="password_confirm" class="form-control form-control-user" placeholder="Confirm Password">
+											<input type="password" name="password_confirm" class="form-control form-control-user" placeholder="Password Confirm">
+											<?= form_error('password_confirm','<small class="text-danger pl-1">','</small>')?? ''; ?>
 										</div>
 										<hr>
 										<!-- <a href="index.html" class="btn btn-google btn-user btn-block">
@@ -68,15 +73,16 @@
 										<a href="index.html" class="btn btn-facebook btn-user btn-block">
 											<i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
 										</a> -->
+										<button type="submit" class="btn btn-round btn-primary btn-user btn-block">
+											Register
+										</button>
 									</form>
-									<button type="button" class="btn btn-round btn-primary btn-user btn-block" onclick="login()">
-											Login
-									</button>
+	
 									<div class="text-center">
 										<a class="small" href="forgot-password.html">Forgot Password?</a>
 									</div>
 									<div class="text-center">
-										<a class="small" href="register.html">Create an Account!</a>
+                                        <a class="small" href="<?= base_url(); ?>user/login">Sign In</a>
 									</div>
 								</div>
 							</div>
@@ -106,28 +112,29 @@
 
 <script>
 
-    function login(){
+    function register(){
 
         event.preventDefault();
         var form = document.getElementById("registerForm");
         var formData = new FormData(form);
 
         //console.log(formData);
-		console.log(Array.from(formData.entries()));
+		//console.log(Array.from(formData.entries()));
 
         $.ajax({
             type: "POST",
-            url: "{{ url('/') }}/api/user/register",
+            url: "<?=base_url();?>api/user/signup",
             data: formData,
             processData: false,
             contentType: false,
             success: function (res){
-                //console.log(res);
-                if(res.status == 0){
-                    alert(res.message?? '');
+				var data = JSON.parse(res)
+				 console.log(data.status);
+                if(data.status == 1){
+					window.location.href = "<?=base_url();?>user/dashboard";
                 }
                 else{
-                    window.location.href = "{{ url('/') }}/user/dashboard";
+					alert(data.message?? '');
                 }
             }
         });

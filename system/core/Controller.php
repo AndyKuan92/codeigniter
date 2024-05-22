@@ -101,4 +101,9 @@ class CI_Controller {
 		return self::$instance;
 	}
 
+	//custom return format
+	public function response($status=0,$code='',$message='',$data=[]){
+        return ['status'=>$status,'code'=>$code,'message'=>$message,'data'=>$data];
+    }
+
 }
