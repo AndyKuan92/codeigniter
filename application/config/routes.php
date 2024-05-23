@@ -56,7 +56,11 @@ $route['default_controller'] = 'welcome';
 //User GET
 $route['user/login'] = 'user/login/index';
 $route['user/register'] = 'user/login/register';
+
 $route['user/dashboard'] = 'user/dashboard/index';
+
+$route['user/phone/list'] = 'user/phone/index';
+
 
 //User POST
 $route['api/user/logout'] = 'user/dashboard/logout';

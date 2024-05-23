@@ -39,6 +39,18 @@ class User_model extends CI_Model {
 		return $res;
 	}
 
+	public function findAllUser(){
+		
+		$res = $this->db
+				->from($this->table)
+				->where('role_id',3)
+				->get()
+				->result_array();
+		//$this->db->close();
+
+		return $res;
+	}
+
 
 }
 ?>
