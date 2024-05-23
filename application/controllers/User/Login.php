@@ -92,6 +92,7 @@ class Login extends CI_Controller {
 				$this->form_validation->set_rules('email', 'Username/Email', 'custom_error');
 				$this->form_validation->set_message('custom_error', 'Username/Email has already taken. Please enter another one.');
 				$this->form_validation->run();
+				$userModel->close_conn();
 				return $this->load->view('user/login/register');
 			}
 			
@@ -125,33 +126,27 @@ class Login extends CI_Controller {
 	}
 
 	//api not developing
-    public function signup()
-	{
-		if( $_SERVER["REQUEST_METHOD"]!="POST" ){
-			show_404();
-		}
+    // public function signup()
+	// {
+	// 	if( $_SERVER["REQUEST_METHOD"]!="POST" ){
+	// 		show_404();
+	// 	}
 
-		$this->load->library('form_validation');
-		$this->form_validation->set_data($this->input->post());
-        $this->form_validation->set_rules('name', 'Surname', 'required');
+	// 	$this->load->library('form_validation');
+	// 	$this->form_validation->set_data($this->input->post());
+    //     $this->form_validation->set_rules('name', 'Surname', 'required');
 		
-		$error_data = [];
-		if( !$this->form_validation->run() ){
-			foreach( $this->input->post() as $k => $v ){
-				if( form_error($k) ){
-					$error_data[$k] = form_error($k,'','');
-				}
-			}
-			return json_encode($this->response(0,'E001',reset($error_data)?? 'Something Went Wrong',$error_data)) ;
-		};
+	// 	$error_data = [];
+	// 	if( !$this->form_validation->run() ){
+	// 		foreach( $this->input->post() as $k => $v ){
+	// 			if( form_error($k) ){
+	// 				$error_data[$k] = form_error($k,'','');
+	// 			}
+	// 		}
+	// 		return json_encode($this->response(0,'E001',reset($error_data)?? 'Something Went Wrong',$error_data)) ;
+	// 	};
 	
-		return json_encode($this->response(0,'','Error',form_error()));
-	}
-
-	//api
-    public function signin()
-	{
-		echo json_encode($this->response());
-	}
+	// 	return json_encode($this->response(0,'','Error',form_error()));
+	// }
 
 }

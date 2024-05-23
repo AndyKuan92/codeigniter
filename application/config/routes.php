@@ -65,4 +65,6 @@ $route['user/phone/list'] = 'user/phone/index';
 //User POST
 $route['api/user/logout'] = 'user/dashboard/logout';
 
+$route['api/user/phone/delete'] = 'user/phone/delete';
+
 

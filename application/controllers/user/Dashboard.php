@@ -20,11 +20,11 @@ class Dashboard extends CI_Controller {
         }
         else if( $_SERVER["REQUEST_METHOD"]==="GET" ){
             if( $this->user_id==0 || $this->role_id==0 ){
-                redirect(base_url().'user/login');
+                return redirect(base_url().'user/login');
             }
         }
         else{
-            redirect(base_url().'user/login');
+            return redirect(base_url().'user/login');
         }
     }
 
@@ -40,8 +40,13 @@ class Dashboard extends CI_Controller {
     //api
     public function logout()
 	{
+        if( !$_SERVER["REQUEST_METHOD"]==="POST" ){
+            return show_404();
+        }
+
         $this->session->sess_destroy();
         echo json_encode($this->response(1,'','You Have Logged Out.',[]));
+        return;//redirect(base_url().'user/login');
 	}
 
 }

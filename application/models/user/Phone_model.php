@@ -1,9 +1,9 @@
 <?php
 
-class User_model extends CI_Model {
+class Phone_model extends CI_Model {
 
 	private $version = 'db';
-	private $table = "user";
+	private $table = "phone";
 
 	public function __construct(){
 			
@@ -24,28 +24,12 @@ class User_model extends CI_Model {
 		return $res;
 	}
 
-	public function findUserByEmail($email,$field="*"){
-		
-		$res = $this->db
-				->from($this->table)
-				->where('role_id',3)
-				->where('email',$email)
-				->where('is_deleted',0)
-				->select($field)
-				->limit(1)
-				->get()
-				->row_array();
-		//$this->db->close();
-
-		return $res;
-	}
-
 	public function findById($id,$field="*"){
 		
 		return $this->db
 				->from($this->table)
 				->where('id',$id)
-				->where('role_id',3)
+                ->where('user_id',$this->session->userdata('id')?? 0)
 				->where('is_deleted',0)
 				->select($field)
 				->limit(1)
@@ -53,15 +37,19 @@ class User_model extends CI_Model {
 				->row_array();
 	}
 
-	public function findAllUser(){
+	public function findAll(){
 		
 		$res = $this->db
 				->from($this->table)
-				->where('role_id',3)
+                ->where('user_id',$this->session->userdata('id')?? 0)
 				->where('is_deleted',0)
 				->get()
 				->result_array();
 		//$this->db->close();
+
+        foreach( $res as $k => $v ){
+            $res[$k]['created_at'] = date('Y-m-d H:i:s', $v['created_at']);
+        }
 
 		return $res;
 	}
@@ -70,7 +58,7 @@ class User_model extends CI_Model {
 		
 		return $this->db
 				->where('id',$id)
-				->where('role_id',3)
+                ->where('user_id',$this->session->userdata('id')?? 0)
 				->where('is_deleted',0)
 				->update($this->table,$update);
 	}

@@ -1,4 +1,5 @@
 <?php $this->load->view('user/common/header'); ?>
+<?php $this->load->view('user/common/toast'); ?>
 
                    <!-- Begin Page Content -->
                 <div class="container-fluid">
@@ -55,6 +56,27 @@
 </div>
 <!-- End of Main Content -->
 
+<!-- Modal -->
+<!-- Logout Modal-->
+<div class="modal fade" id="localModalPhoneDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="localModalPhoneDeleteTitle">Phone Delete</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body text-danger">Delete This Record?</div>
+            <form id="localModalPhoneDeleteForm"></form>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="button" id="localModalPhoneDeleteSubmitButton" onclick="localModalPhoneDeleteSubmit()">Confirm</button>
+                <button class="btn btn-danger" type="button" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Bootstrap core JavaScript-->
 <script src="<?= base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
 <script src="<?= base_url(); ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -84,7 +106,7 @@
                 },
                 { title:'Name/Contact', mRender: function (data, type, row) {
 
-                    return '<i class="las la-bed"></i>'+row.name+'</br><i class="la la-user-circle nav-icon">'+row.contact+'</i>';
+                    return '<i class="fa fa-user"></i> '+row.name+'</br><i class="fa fa-phone nav-icon"> '+row.value+'</i>';
     
                     }
                 },
@@ -102,7 +124,7 @@
                 },
                 { title:'Actions', mRender: function (data, type, row) {
 
-                        return '<button class="text-info" onclick="localModalBillManualSettleOpen('+row.id+')"><i class="las la-edit">Manual</i></button></br><button class="text-info" onclick="localModalBillPdf('+row.id+')"><i class="las la-file-alt">PDF</i></button></br><button class="text-danger" onclick="localModalBillDeleteOpen('+row.id+')"><i class="las la-trash-alt">Delete</i></button>';
+                        return '<button class="text-info" style="border-width:0px;" data-id='+row.id+' onclick="phoneDetails(this)"><i class="fas fa-fw fa-edit"></i>Edit</button>&nbsp;<button class="text-danger" style="border-width:0px;" data-id='+row.id+' onclick="localModalPhoneDeleteOpen(this)"><i class="fas fa-fw fa-trash"></i>Delete</button>';
 
                     }
                 },
@@ -113,6 +135,57 @@
         })
 
     });
+
+
+    function phoneDetails(this_div) {
+
+        var div = this_div;
+        var id = div.dataset.id;
+        console.log(id);
+        //navigator.clipboard.writeText(id);
+
+    }
+
+    function localModalPhoneDeleteOpen(this_div) {
+
+        var div = this_div;
+        var phone_id = div.dataset.id;
+
+        $('#localModalPhoneDeleteSubmitButton').data('id', phone_id);
+        $('#localModalPhoneDeleteTitle').html("Bill Delete ("+phone_id+")");
+        $('#localModalPhoneDelete').modal("show");
+        $('.modal-backdrop').hide();
+
+    }
+
+    function localModalPhoneDeleteSubmit(){
+        event.preventDefault();
+        var form = document.getElementById("localModalPhoneDeleteForm");
+        var formData = new FormData(form);
+        var phone_id = $('#localModalPhoneDeleteSubmitButton').data('id');
+        formData.append('id', phone_id);
+        //console.log(Array.from(formData.entries()));
+
+        $.ajax({
+            'url': "<?= base_url(); ?>api/user/phone/delete",
+            'method': "POST",
+            'data':formData,
+            'headers': {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+            'processData': false,
+            'contentType': false,
+        }).done( function(res) {
+            //console.log(res);
+            $('#localModalPhoneDelete').modal("hide");
+            data = JSON.parse(res);
+            if(data.status==1){
+                toast(data.message,'<i class="fa fa-check open-card-option" style="margin:0px;"></i>',1);
+                setTimeout(function(){window.location.reload()},1000);
+            }
+            else{
+                toast(data.message,'<i class="fa fa-close open-card-option" style="margin:0px;"></i>',0);
+            }
+        });
+    }
 
 </script>
 
