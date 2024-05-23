@@ -163,7 +163,7 @@
         var phone_id = div.dataset.id;
 
         $('#localModalPhoneDeleteSubmitButton').data('id', phone_id);
-        $('#localModalPhoneDeleteTitle').html("Bill Delete ("+phone_id+")");
+        $('#localModalPhoneDeleteTitle').html("Phone Delete ("+phone_id+")");
         $('#localModalPhoneDelete').modal("show");
         $('.modal-backdrop').hide();
 
