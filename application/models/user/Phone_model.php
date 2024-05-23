@@ -54,7 +54,7 @@ class Phone_model extends CI_Model {
 		return $res;
 	}
 
-	public function userUpdateById($id,$update){
+	public function updateById($id,$update){
 		
 		return $this->db
 				->where('id',$id)

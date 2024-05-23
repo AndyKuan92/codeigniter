@@ -60,6 +60,8 @@ $route['user/register'] = 'user/login/register';
 $route['user/dashboard'] = 'user/dashboard/index';
 
 $route['user/phone/list'] = 'user/phone/index';
+$route['user/phone/add'] = 'user/phone/add';
+$route['user/phone/edit/(:any)'] = 'user/phone/edit/$1';
 
 
 //User POST

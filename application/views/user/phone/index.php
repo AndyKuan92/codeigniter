@@ -5,7 +5,17 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Phone > List</h1>
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-2 text-gray-800">Phone > List</h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 p-3">
+                            <a href="<?= base_url(); ?>user/phone/add" class="btn btn-sm btn-primary shadow-sm" >
+                                <i class="fas fa-download fa-plus text-white-50"></i> Add Phone
+                            </a>
+                        </div>
+                    </div>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
@@ -57,7 +67,7 @@
 <!-- End of Main Content -->
 
 <!-- Modal -->
-<!-- Logout Modal-->
+<!-- Phone Delete Modal-->
 <div class="modal fade" id="localModalPhoneDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -124,7 +134,7 @@
                 },
                 { title:'Actions', mRender: function (data, type, row) {
 
-                        return '<button class="text-info" style="border-width:0px;" data-id='+row.id+' onclick="phoneDetails(this)"><i class="fas fa-fw fa-edit"></i>Edit</button>&nbsp;<button class="text-danger" style="border-width:0px;" data-id='+row.id+' onclick="localModalPhoneDeleteOpen(this)"><i class="fas fa-fw fa-trash"></i>Delete</button>';
+                        return '<button class="text-info" style="border-width:0px;" data-id='+row.id+' onclick="phoneEdit(this)"><i class="fas fa-fw fa-edit"></i>Edit</button>&nbsp;<button class="text-danger" style="border-width:0px;" data-id='+row.id+' onclick="localModalPhoneDeleteOpen(this)"><i class="fas fa-fw fa-trash"></i>Delete</button>';
 
                     }
                 },
@@ -137,11 +147,12 @@
     });
 
 
-    function phoneDetails(this_div) {
+    function phoneEdit(this_div) {
 
         var div = this_div;
         var id = div.dataset.id;
         console.log(id);
+        window.location.href = "<?= base_url(); ?>user/phone/edit/"+id;
         //navigator.clipboard.writeText(id);
 
     }
