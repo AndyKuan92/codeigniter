@@ -1,11 +1,6 @@
 <?php
-namespace Services;
 
-class Aesencrypt {
-
-	// public function __construct(){
-    //     $this->key = explode(':',env('APP_KEY'))[1]?? "ks6ZiTAZS16jGi6FGIu0SVOcvAxGRGp4E165b+5byzs=";
-	// }
+class Aesencrypt_model extends CI_Model {
 
 	private $login_key = "abcdefg";
 

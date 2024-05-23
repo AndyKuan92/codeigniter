@@ -45,9 +45,12 @@
 										<h1 class="h4 text-gray-900 mb-4"><b>Phone Book System</b></h1>
 										<h1 class="h4 text-gray-900 mb-4">Login</h1>
 									</div>
-									<form id="loginForm">
+									<div class="text-center">
+										<?= $this->session->flashdata('message')?? '' ?>
+									</div>
+									<form id="loginForm" method="POST" action="<?= base_url() ?>user/login">
 										<div class="form-group">
-											<input type="email" name="email" class="form-control form-control-user" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+											<input type="email" name="email" class="form-control form-control-user" placeholder="Enter Email" value="<?= set_value('email'); ?>">
 										</div>
 										<div class="form-group">
 											<input type="password" name="password" class="form-control form-control-user" placeholder="Password">
@@ -59,10 +62,10 @@
 										<a href="index.html" class="btn btn-facebook btn-user btn-block">
 											<i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
 										</a> -->
-									</form>
-									<button type="button" class="btn btn-round btn-primary btn-user btn-block" onclick="login()">
+										<button type="submit" class="btn btn-round btn-primary btn-user btn-block" onclick="">
 											Login
-									</button>
+										</button>
+									</form>
 									<div class="text-center">
 										<a class="small" href="forgot-password.html">Forgot Password?</a>
 									</div>

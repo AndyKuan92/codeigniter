@@ -61,3 +61,32 @@
 </body>
 
 </html>
+
+<script>
+
+    function logout(){
+
+        event.preventDefault();
+        //var form = document.getElementById("loginForm");
+        //var formData = new FormData(form);
+
+        //console.log(formData);
+        //console.log(Array.from(formData.entries()));
+
+        $.ajax({
+            type: "POST",
+            url: "<?= base_url(); ?>/api/user/logout",
+            data: [],
+            processData: false,
+            contentType: false,
+            success: function (res){
+                var data = JSON.parse(res);
+                alert(data.message?? 'You Have Logged Out.');
+				window.location.href = "<?=base_url();?>user/login";
+            }
+        });
+
+    }
+
+
+</script>

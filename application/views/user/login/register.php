@@ -47,23 +47,23 @@
 									</div>
 									<form id="registerForm" method="POST" action="<?= base_url() ?>user/register">
 										<div class="form-group">
-											<input name="name" class="form-control form-control-user" placeholder="Surname">
+											<input name="name" class="form-control form-control-user" placeholder="Surname" value="<?= set_value('name'); ?>">
 											<?= form_error('name','<small class="text-danger pl-1">','</small>')?? ''; ?>
 										</div>
                                         <div class="form-group">
-											<input type="number" name="contact" class="form-control form-control-user"  placeholder="Contact">
+											<input type="number" name="contact" class="form-control form-control-user"  placeholder="Contact" value="<?= set_value('contact'); ?>">
 											<?= form_error('contact','<small class="text-danger pl-1">','</small>')?? ''; ?>
 										</div>
                                         <div class="form-group">
-											<input type="email" name="email" class="form-control form-control-user" placeholder="Username/Email">
+											<input type="email" name="email" class="form-control form-control-user" placeholder="Username/Email" value="<?= set_value('email'); ?>">
 											<?= form_error('email','<small class="text-danger pl-1">','</small>')?? ''; ?>
 										</div>
 										<div class="form-group">
-											<input type="password" name="password" class="form-control form-control-user" placeholder="Password">
+											<input type="password" name="password" class="form-control form-control-user" placeholder="Password" value="<?= set_value('password'); ?>">
 											<?= form_error('password','<small class="text-danger pl-1">','</small>')?? ''; ?>
 										</div>
                                         <div class="form-group">
-											<input type="password" name="password_confirm" class="form-control form-control-user" placeholder="Password Confirm">
+											<input type="password" name="password_confirm" class="form-control form-control-user" placeholder="Password Confirm" value="<?= set_value('password_confirm'); ?>">
 											<?= form_error('password_confirm','<small class="text-danger pl-1">','</small>')?? ''; ?>
 										</div>
 										<hr>
@@ -128,8 +128,8 @@
             processData: false,
             contentType: false,
             success: function (res){
-				var data = JSON.parse(res)
-				 console.log(data.status);
+				var data = JSON.parse(res);
+				//console.log(data.status);
                 if(data.status == 1){
 					window.location.href = "<?=base_url();?>user/dashboard";
                 }

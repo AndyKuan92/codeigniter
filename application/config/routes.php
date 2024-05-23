@@ -59,7 +59,6 @@ $route['user/register'] = 'user/login/register';
 $route['user/dashboard'] = 'user/dashboard/index';
 
 //User POST
-$route['api/user/signup'] = 'user/login/signup';
-$route['api/user/signin'] = 'user/login/signin';
+$route['api/user/logout'] = 'user/dashboard/logout';
 
 
