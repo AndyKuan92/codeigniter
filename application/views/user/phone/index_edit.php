@@ -34,7 +34,7 @@
                             <b class="text-dark">Image:</b>
                         </div>
                         <div class="form-group row col-12">
-                            <img src="<?= base_url().$details['image_url'] ?>" style="width:200px; height:200px; object-fit:contain;">
+                            <img src="<?= base_url().$details['image_url'] ?>" style="width:200px; height:200px; object-fit:contain;" alt="No image">
                         </div>
                         <div class="form-group row col-12">
                             <input type="file" name="image" class="" id="image" value="">

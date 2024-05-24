@@ -128,7 +128,7 @@
                 },
                 { title:'Image', mRender: function (data, type, row) {
 
-                        return '<span style="color:green">Pending</span>';
+                        return '<img src="<?= base_url() ?>'+row.image_url+'" style="width:100px; height:100px; object-fit:contain;" alt="No image">';
                         
                     }
                 },
