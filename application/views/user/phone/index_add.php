@@ -16,7 +16,7 @@
             </div>
             <div class="card-body">
                 <div class="col-12">
-                    <form id="localModalPhoneAddForm" method="POST" action="<?= base_url() ?>user/phone/add">
+                    <form id="localModalPhoneAddForm" method="POST" action="<?= base_url() ?>user/phone/add" enctype="multipart/form-data">
                         <div class="form-group row col-lg-6 col-md-12">
                             <?= $this->session->flashdata('message')?? '' ?>
                         </div>
@@ -29,6 +29,20 @@
                             <b class="text-dark">Phone Number:</b>
                             <input type="number" name="contact" class="form-control form-control-user" placeholder="Enter Contact" value="<?= set_value('contact'); ?>">
                             <?= form_error('contact','<small class="text-danger pl-1">','</small>')?? ''; ?>
+                        </div>
+                        <div class="form-group row col-12">
+                            <b class="text-dark">Image:</b>
+                        </div>
+                        <div class="form-group row col-12">
+                            <input type="file" name="image" class="" id="image" value="">
+                        </div>
+                        <div hidden class="form-group row col-12">
+                            <input type="text" name="imagex" class="" value="x">
+                        </div>
+                        <div class="form-group row col-12">
+                            <div id="image_error">
+                                <?= form_error('imagex','<small class="text-danger pl-1">','</small>')?? ''; ?>
+                            </div>
                         </div>
                         <div class="form-group row col-12 pt-3" style="text-align:right; justify-content:end;">
                             <button type="submit" class="col-lg-3 col-md-6 btn btn-round btn-primary btn-user btn-block">
@@ -121,6 +135,44 @@
             }
         });
     }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        
+        var image = document.getElementById("image");
+        var formUpload = new FormData();
+
+        image.addEventListener("change", function (e) {
+            e.preventDefault(); // Prevent the default form submission
+            formUpload.delete("fileUpload");
+
+            if (image.files.length === 0) {
+                document.getElementById("image_error").innerHTML = '';
+                alert("Please select a file.");
+                return;
+            }
+
+            formUpload.append("fileUpload", image.files[0]);
+            //console.log(Array.from(formUpload.entries()));
+
+            $.ajax({
+                'url': "<?= base_url(); ?>api/user/phone/checkfileupload",
+                'method': "POST",
+                'data':formUpload,
+                'headers': {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+                'processData': false,
+                'contentType': false,
+            }).done( function(res) {
+                var data = JSON.parse(res);
+                if(data.status==1){
+                    document.getElementById("image_error").innerHTML = '';
+                }
+                else{
+                    document.getElementById("image_error").innerHTML = '<small class="text-danger pl-1">'+data.message+'</small>';
+                }
+            });  
+        });
+
+    });
 
 </script>
 

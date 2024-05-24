@@ -68,5 +68,6 @@ $route['user/phone/edit/(:any)'] = 'user/phone/edit/$1';
 $route['api/user/logout'] = 'user/dashboard/logout';
 
 $route['api/user/phone/delete'] = 'user/phone/delete';
+$route['api/user/phone/checkfileupload'] = 'user/phone/checkFileUpload';
 
 
