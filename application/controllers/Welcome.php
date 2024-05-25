@@ -20,6 +20,14 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$data['data'] = [];
+
+        $this->load->model('user/Phone_model');
+		$phoneModel = new Phone_model();
+        $data['list'] = $phoneModel->systemFindAll();
+        $phoneModel->close_conn();
+
+		//exit(json_encode( $data['list']));
+		return $this->load->view('page/index',$data);
 	}
 }

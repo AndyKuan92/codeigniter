@@ -1,0 +1,22 @@
+/* mouse over link */
+.nav-menu:hover {
+    color: rgb(54, 46, 46) !important;
+    font-weight: bold;
+}
+
+/* selected link */
+.nav-menu-active {
+    color: rgb(54, 46, 46) !important;
+    font-weight: bold;
+}
+
+/* carousel */
+.carousel-caption {
+    top: 0px;
+}
+
+/* selected link */
+.test {
+    color: rgb(9, 25, 98) !important;
+    font-weight: bold;
+}

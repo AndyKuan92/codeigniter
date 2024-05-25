@@ -39,7 +39,9 @@
 							<div class="col-lg-12">
 								<div class="p-5">
 									<div class="text-center p-3">
-										<img src="<?= base_url() ?>assets/img/image1.png" style="height:200px; width:200px;">
+										<a href="<?= base_url(); ?>">
+											<img src="<?= base_url() ?>assets/img/image1.png" style="height:200px; width:200px;">
+										</a>
 									</div>
 									<div class="text-center">
 										<h1 class="h4 text-gray-900 mb-4"><b>Phone Book System</b></h1>

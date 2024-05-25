@@ -54,6 +54,24 @@ class Phone_model extends CI_Model {
 		return $res;
 	}
 
+    public function systemFindAll(){
+		
+		$res = $this->db
+				->from($this->table)
+				->where('is_deleted',0)
+                ->order_by('id','desc')
+                ->limit(10)
+				->get()
+				->result_array();
+		//$this->db->close();
+
+        foreach( $res as $k => $v ){
+            $res[$k]['created_at'] = date('Y-m-d H:i:s', $v['created_at']);
+        }
+
+		return $res;
+	}
+
 	public function updateById($id,$update){
 		
 		return $this->db
