@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>e-Studio</title>
+  <title>eBusiness Bootstrap Template</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -42,24 +42,13 @@
   ======================================================= -->
 </head>
 
-<style>
-  .sticky-logo h1 span {
-    color:maroon;
-  }
-  
-  .p-5 {
-    padding: 30px;
-  }
-
-</style>
-
 <body data-spy="scroll" data-target="#navbar-example">
 
   <div id="preloader"></div>
 
   <header>
     <!-- header-area start -->
-    <div id="sticker" class="header-area" style="background-color:coral;">
+    <div id="sticker" class="header-area" style="background-color:darkblue;">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12">
@@ -76,7 +65,7 @@
 									</button>
                 <!-- Brand -->
                 <a class="navbar-brand page-scroll sticky-logo" href="index.html">
-                  <h1><span>IO</span>Tenants</h1>
+                  <h1><span>e</span>Business</h1>
                   <!-- Uncomment below if you prefer to use an image logo -->
                   <!-- <img src="img/logo.png" alt="" title=""> -->
 								</a>
@@ -130,9 +119,9 @@
   <div id="home" class="slider-area">
     <div class="bend niceties preview-2">
       <div id="ensign-nivoslider" class="slides">
-        <img src="<?= base_url('assets/vendor/website_template/eBusiness/'); ?>img/slider/iotenants_slide1.jpg" alt="" title="#slider-direction-1" />
-        <img src="<?= base_url('assets/vendor/website_template/eBusiness/'); ?>img/slider/iotenants_slide2.webp" alt="" title="#slider-direction-2" />
-        <img src="<?= base_url('assets/vendor/website_template/eBusiness/'); ?>img/slider/iotenants_slide3.jpg" alt="" title="#slider-direction-3" />
+        <img src="<?= base_url('assets/vendor/website_template/eBusiness/'); ?>img/slider/slider1.jpg" alt="" title="#slider-direction-1" />
+        <img src="<?= base_url('assets/vendor/website_template/eBusiness/'); ?>img/slider/slider2.jpg" alt="" title="#slider-direction-2" />
+        <img src="<?= base_url('assets/vendor/website_template/eBusiness/'); ?>img/slider/slider3.jpg" alt="" title="#slider-direction-3" />
       </div>
 
       <!-- direction 1 -->
@@ -143,15 +132,15 @@
               <div class="slider-content">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">The Business For The Future</h2>
+                  <h2 class="title1">The Best Business Information </h2>
                 </div>
                 <!-- layer 2 -->
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Let Technology Runs Your Rental Business Online</h1>
+                  <h1 class="title2">We're In The Business Of Helping You Start Your Business</h1>
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">Top Services</a>
+                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
                   <a class="ready-btn page-scroll" href="#about">Learn More</a>
                 </div>
               </div>
@@ -168,15 +157,15 @@
               <div class="slider-content text-center">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">Suitable For Retired Landlord, Hotel Or Homestay Business Owner</h2>
+                  <h2 class="title1">The Best Business Information </h2>
                 </div>
                 <!-- layer 2 -->
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Travellers Easier To Find You And Understand Your Services</h1>
+                  <h1 class="title2">We're In The Business Of Get Quality Business Service</h1>
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">Top Services</a>
+                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
                   <a class="ready-btn page-scroll" href="#about">Learn More</a>
                 </div>
               </div>
@@ -193,15 +182,15 @@
               <div class="slider-content">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">Emerging Technology Are Await To Explore</h2>
+                  <h2 class="title1">The Best business Information </h2>
                 </div>
                 <!-- layer 2 -->
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Wireless Infrastructure To Help Your Business Security</h1>
+                  <h1 class="title2">Helping Business Security  & Peace of Mind for Your Family</h1>
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">Top Services</a>
+                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
                   <a class="ready-btn page-scroll" href="#about">Learn More</a>
                 </div>
               </div>
@@ -219,7 +208,7 @@
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="section-headline text-center">
-            <h2>About IOTenants</h2>
+            <h2>About eBusiness</h2>
           </div>
         </div>
       </div>
@@ -229,7 +218,7 @@
           <div class="well-left">
             <div class="single-well">
               <a href="#">
-								  <img src="<?= base_url('assets/vendor/website_template/eBusiness/'); ?>img/about/1.jpg" alt="">
+								  <img src="img/about/1.jpg" alt="">
 								</a>
             </div>
           </div>
@@ -239,24 +228,27 @@
           <div class="well-middle">
             <div class="single-well">
               <a href="#">
-                <h4 class="sec-head">Smart House Rental Management System</h4>
+                <h4 class="sec-head">project Maintenance</h4>
               </a>
               <p>
-                Trouble to advertise your house rental and home-stay services and manage your rental business? IOTenants is here to help you manage your rental operation from tenant check-in to rental billing, saving most of the paper works required in traditional way. It is a system designed to ease your daily routines by automating tasks like leasing and billing. It is also integrated with smart products to enchance the security of your properties. 
+                Redug Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure aspernatur sit adipisci quaerat unde at nequeRedug Lagre dolor sit amet, consectetur adipisicing elit. Itaque quas officiis iure
               </p>
               <ul>
                 <li>
-                  <i class="fa fa-check"></i> Business Marketing & Branding
+                  <i class="fa fa-check"></i> Interior design Package
                 </li>
                 <li>
-                  <i class="fa fa-check"></i> Rental Management System
+                  <i class="fa fa-check"></i> Building House
                 </li>
                 <li>
-                  <i class="fa fa-check"></i> Embedded Smart Products 
+                  <i class="fa fa-check"></i> Reparing of Residentail Roof
                 </li>
-                <!-- <li>
-                  <i class="fa fa-check"></i> Embedded Smart Products 
-                </li> -->
+                <li>
+                  <i class="fa fa-check"></i> Renovaion of Commercial Office
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> Make Quality Products
+                </li>
               </ul>
             </div>
           </div>
@@ -287,10 +279,10 @@
                   <a class="services-icon" href="#">
 											<i class="fa fa-code"></i>
 										</a>
-                  <h4>Web Development</h4>
+                  <h4>Expert Coder</h4>
                   <p>
-                    We develop custom system for your needs. Digital transformation of your rental business is possible when you meet experienced system developers.
-                  </p> 
+                    will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
+                  </p>
                 </div>
               </div>
               <!-- end about-details -->
@@ -303,25 +295,9 @@
                   <a class="services-icon" href="#">
 											<i class="fa fa-camera-retro"></i>
 										</a>
-                  <h4>Creative Photographing</h4>
+                  <h4>Creative Designer</h4>
                   <p>
-                    Photography is essential skill to advertise your business. Our photograph expertists can help you to take great pictures of your unit to be leased.
-                </div>
-              </div>
-              <!-- end about-details -->
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <!-- end col-md-4 -->
-            <div class=" about-move">
-              <div class="services-details">
-                <div class="single-services">
-                  <a class="services-icon" href="#">
-											<i class="fa fa-puzzle-piece"></i>
-										</a>
-                  <h4>Logo Design</h4>
-                  <p>
-                    If you are stuggling to choose a design for your brand or business, we are here to assist you in logo designing with advanced tools.
+                    will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
                   </p>
                 </div>
               </div>
@@ -334,11 +310,28 @@
               <div class="services-details">
                 <div class="single-services">
                   <a class="services-icon" href="#">
-											<i class="fa fa-crosshairs"></i>
+											<i class="fa fa-wordpress"></i>
 										</a>
-                  <h4>Digital Marketing</h4>
+                  <h4>Wordpress Developer</h4>
                   <p>
-                    We help your business reaches target audiences through online marketing with various strategies include social media marketing and SEO optimisation.
+                    will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
+                  </p>
+                </div>
+              </div>
+              <!-- end about-details -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <!-- end col-md-4 -->
+            <div class=" about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+											<i class="fa fa-camera-retro"></i>
+										</a>
+                  <h4>Social Marketer </h4>
+                  <p>
+                    will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
                   </p>
                 </div>
               </div>
@@ -352,11 +345,11 @@
               <div class="services-details">
                 <div class="single-services">
                   <a class="services-icon" href="#">
-											<i class="fa fa-share-alt"></i>
+											<i class="fa fa-bar-chart"></i>
 										</a>
-                  <h4>IoT Implementation</h4>
+                  <h4>Seo Expart</h4>
                   <p>
-                    With our quality smart products offered, it effortlessly empowers your rental business in term of efficiency and security. We will continously implement more IoT products in our system.
+                    will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
                   </p>
                 </div>
               </div>
@@ -372,9 +365,9 @@
                   <a class="services-icon" href="#">
 											<i class="fa fa-ticket"></i>
 										</a>
-                  <h4>Customer Support</h4>
+                  <h4>24/7 Support</h4>
                   <p>
-                    We also provide support to your 24/7 regarding the system or application you are using. 
+                    will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.
                   </p>
                 </div>
               </div>
@@ -387,165 +380,10 @@
   </div>
   <!-- End Service area -->
 
-  <!-- Products area start -->
-  <div class="faq-area area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline text-center">
-            <h2>Products</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="tab-menu">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-              <li class="active">
-                <a href="#p-1-view-1" role="tab" data-toggle="tab">Overview</a>
-              </li>
-              <li>
-                <a href="#p-1-view-2" role="tab" data-toggle="tab">Details</a>
-              </li>
-              <li>
-                <a href="#p-1-view-3" role="tab" data-toggle="tab">Price</a>
-              </li>
-            </ul>
-          </div>
-          <div class="tab-content">
-            <div class="tab-pane active" id="p-1-view-1">
-              <div class="tab-inner">
-                <div class="event-content head-team">
-                  <h4>Smart Meter</h4></br>
-                  <div class="row" style="text-align:center;">
-                    <img src="<?= base_url('assets/vendor/website_template/eBusiness/'); ?>img/slider/product1.jpg" style="height:300px;" alt="">
-                  </div>
-                  <div class="row" style="text-align:left;">
-                    <div class="col-lg-12 col-md-12">
-                      <h3 class="">A Closer Look at the Benefits of Smart Meters</h3></br>
-                      <span style="font-size:20px;"> 
-                          Discover how smart meters enhance power management and usage. Smart meters provide better power decisions. Examine how smart meters monitor power consumption through automation.</br>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane" id="p-1-view-2">
-              <div class="tab-inner">
-                <div class="event-content head-team">
-                  <h4>Planning</h4>
-                  <p>
-                    voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto ducimus, doloribus fuga itaque omnis.
-                  </p>
-                  <p>
-                    Redug Lares dolor sit amet, consectetur adipisicing elit. Animi vero excepturi magnam ducimus adipisci voluptas, praesentium maxime necessitatibus in dolor dolores unde ab, libero quo. Aut.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane" id="p-1-view-3">
-              <div class="tab-inner">
-                <div class="event-content head-team">
-                  <h4>Success</h4>
-                  <p>
-                    voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto ducimus, doloribus fuga itaque omnis placeat.
-                  </p>
-                  <p>
-                    voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto ducimus, doloribus fuga itaque omnis.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="tab-menu">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-              <li class="active">
-                <a href="#p-view-1" role="tab" data-toggle="tab">Project</a>
-              </li>
-              <li>
-                <a href="#p-view-2" role="tab" data-toggle="tab">Planning</a>
-              </li>
-              <li>
-                <a href="#p-view-3" role="tab" data-toggle="tab">Success</a>
-              </li>
-            </ul>
-          </div>
-          <div class="tab-content">
-            <div class="tab-pane active" id="p-view-1">
-              <div class="tab-inner">
-                <div class="event-content head-team">
-                  <h4>Project</h4></br>
-                  <div class="row" style="text-align:center;">
-                    <img src="<?= base_url('assets/vendor/website_template/eBusiness/'); ?>img/slider/product2.jpg" style="height:300px;" alt="">
-                  </div>
-                  <div class="row" style="text-align:left;">
-                    <div class="col-lg-12 col-md-12">
-                      <h3 class="">A Closer Look at the Benefits of Smart Meters</h3></br>
-                      <span style="font-size:20px;"> 
-                          Discover how smart meters enhance power management and usage. Smart meters provide better power decisions. Examine how smart meters monitor power consumption through automation.</br>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane" id="p-view-2">
-              <div class="tab-inner">
-                <div class="event-content head-team">
-                  <h4>Planning</h4>
-                  <p>
-                    voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto ducimus, doloribus fuga itaque omnis.
-                  </p>
-                  <p>
-                    Redug Lares dolor sit amet, consectetur adipisicing elit. Animi vero excepturi magnam ducimus adipisci voluptas, praesentium maxime necessitatibus in dolor dolores unde ab, libero quo. Aut.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane" id="p-view-3">
-              <div class="tab-inner">
-                <div class="event-content head-team">
-                  <h4>Success</h4>
-                  <p>
-                    voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto ducimus, doloribus fuga itaque omnis placeat.
-                  </p>
-                  <p>
-                    voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto ducimus, doloribus fuga itaque omnis.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end Row -->
-    </div>
-  </div>
-  <!-- End Products Area -->
-
   <!-- our-skill-area start -->
   <div class="our-skill-area fix hidden-sm">
     <div class="test-overly"></div>
     <div class="skill-bg area-padding-2">
-      <div class="container">
-        <div class="row p-5">
-          <div class="skill-text">
-            <!-- single-skill start -->
-            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-              <div class="single-skill">
-                <div class="progress-circular">
-                  <h2 class="progress-h4"><b>Our Customers</b></h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="container">
         <!-- section-heading end -->
         <div class="row">
@@ -554,8 +392,8 @@
             <div class="col-xs-12 col-sm-3 col-md-3 text-center">
               <div class="single-skill">
                 <div class="progress-circular">
-                  <input type="text" class="knob" value="0" data-rel="60" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
-                  <h3 class="progress-h4">House Owner</h3>
+                  <input type="text" class="knob" value="0" data-rel="95" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+                  <h3 class="progress-h4">Web Design</h3>
                 </div>
               </div>
             </div>
@@ -564,8 +402,8 @@
             <div class="col-xs-12 col-sm-3 col-md-3 text-center">
               <div class="single-skill">
                 <div class="progress-circular">
-                  <input type="text" class="knob" value="0" data-rel="35" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
-                  <h3 class="progress-h4">Property Agent</h3>
+                  <input type="text" class="knob" value="0" data-rel="85" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+                  <h3 class="progress-h4">Graphics Design</h3>
                 </div>
               </div>
             </div>
@@ -574,8 +412,8 @@
             <div class="col-xs-12 col-sm-3 col-md-3 text-center">
               <div class="single-skill">
                 <div class="progress-circular">
-                  <input type="text" class="knob" value="0" data-rel="3" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
-                  <h3 class="progress-h4">Property Developer</h3>
+                  <input type="text" class="knob" value="0" data-rel="75" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+                  <h3 class="progress-h4">Php Developer</h3>
                 </div>
               </div>
             </div>
@@ -584,8 +422,8 @@
             <div class="col-xs-12 col-sm-3 col-md-3 text-center">
               <div class="single-skill">
                 <div class="progress-circular">
-                  <input type="text" class="knob" value="0" data-rel="1" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
-                  <h3 class="progress-h4">Hotel</h3>
+                  <input type="text" class="knob" value="0" data-rel="65" data-linecap="round" data-width="175" data-bgcolor="#fff" data-fgcolor="#3EC1D5" data-thickness=".20" data-readonly="true" disabled>
+                  <h3 class="progress-h4">Java Script</h3>
                 </div>
               </div>
             </div>
@@ -596,173 +434,6 @@
     </div>
   </div>
   <!-- our-skill-area end -->
-
-  <!-- Start team Area -->
-  <div id="team" class="our-team-area area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline text-center">
-            <h2>Our special Team</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="team-top">
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="single-team-member">
-              <div class="team-img">
-                <a href="#">
-										<img src="<?= base_url('assets/vendor/website_template/eBusiness/'); ?>img/team/1.jpg" alt="">
-									</a>
-                <div class="team-social-icon text-center">
-                  <ul>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-facebook"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-twitter"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-instagram"></i>
-												</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-content text-center">
-                <h4>Jhon Mickel</h4>
-                <p>Seo</p>
-              </div>
-            </div>
-          </div>
-          <!-- End column -->
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="single-team-member">
-              <div class="team-img">
-                <a href="#">
-										<img src="<?= base_url('assets/vendor/website_template/eBusiness/'); ?>img/team/2.jpg" alt="">
-									</a>
-                <div class="team-social-icon text-center">
-                  <ul>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-facebook"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-twitter"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-instagram"></i>
-												</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-content text-center">
-                <h4>Andrew Arnold</h4>
-                <p>Web Developer</p>
-              </div>
-            </div>
-          </div>
-          <!-- End column -->
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="single-team-member">
-              <div class="team-img">
-                <a href="#">
-										<img src="<?= base_url('assets/vendor/website_template/eBusiness/'); ?>img/team/3.jpg" alt="">
-									</a>
-                <div class="team-social-icon text-center">
-                  <ul>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-facebook"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-twitter"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-instagram"></i>
-												</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-content text-center">
-                <h4>Lellien Linda</h4>
-                <p>Web Design</p>
-              </div>
-            </div>
-          </div>
-          <!-- End column -->
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="single-team-member">
-              <div class="team-img">
-                <a href="#">
-										<img src="<?= base_url('assets/vendor/website_template/eBusiness/'); ?>img/team/4.jpg" alt="">
-									</a>
-                <div class="team-social-icon text-center">
-                  <ul>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-facebook"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-twitter"></i>
-												</a>
-                    </li>
-                    <li>
-                      <a href="#">
-													<i class="fa fa-instagram"></i>
-												</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="team-content text-center">
-                <h4>Jhon Powel</h4>
-                <p>Seo Expert</p>
-              </div>
-            </div>
-          </div>
-          <!-- End column -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Team Area -->
-
-  <!-- Start reviews Area -->
-  <div class="reviews-area hidden-xs">
-    <div class="work-us">
-      <div class="work-left-text">
-        <a href="#">
-						<img src="<?= base_url('assets/vendor/website_template/eBusiness/'); ?>img/about/2.jpg" alt="">
-					</a>
-      </div>
-      <div class="work-right-text text-center">
-        <h2>Connect with us</h2>
-        <h5></h5>
-        <a href="#contact" class="ready-btn">Contact us</a>
-      </div>
-    </div>
-  </div>
-  <!-- End reviews Area -->
 
   <!-- Faq area start -->
   <div class="faq-area area-padding">
@@ -944,6 +615,173 @@
     </div>
   </div>
   <!-- End Wellcome Area -->
+
+  <!-- Start team Area -->
+  <div id="team" class="our-team-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>Our special Team</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="team-top">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+										<img src="img/team/1.jpg" alt="">
+									</a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                    <li>
+                      <a href="#">
+													<i class="fa fa-facebook"></i>
+												</a>
+                    </li>
+                    <li>
+                      <a href="#">
+													<i class="fa fa-twitter"></i>
+												</a>
+                    </li>
+                    <li>
+                      <a href="#">
+													<i class="fa fa-instagram"></i>
+												</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-content text-center">
+                <h4>Jhon Mickel</h4>
+                <p>Seo</p>
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+										<img src="img/team/2.jpg" alt="">
+									</a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                    <li>
+                      <a href="#">
+													<i class="fa fa-facebook"></i>
+												</a>
+                    </li>
+                    <li>
+                      <a href="#">
+													<i class="fa fa-twitter"></i>
+												</a>
+                    </li>
+                    <li>
+                      <a href="#">
+													<i class="fa fa-instagram"></i>
+												</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-content text-center">
+                <h4>Andrew Arnold</h4>
+                <p>Web Developer</p>
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+										<img src="img/team/3.jpg" alt="">
+									</a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                    <li>
+                      <a href="#">
+													<i class="fa fa-facebook"></i>
+												</a>
+                    </li>
+                    <li>
+                      <a href="#">
+													<i class="fa fa-twitter"></i>
+												</a>
+                    </li>
+                    <li>
+                      <a href="#">
+													<i class="fa fa-instagram"></i>
+												</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-content text-center">
+                <h4>Lellien Linda</h4>
+                <p>Web Design</p>
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              <div class="team-img">
+                <a href="#">
+										<img src="img/team/4.jpg" alt="">
+									</a>
+                <div class="team-social-icon text-center">
+                  <ul>
+                    <li>
+                      <a href="#">
+													<i class="fa fa-facebook"></i>
+												</a>
+                    </li>
+                    <li>
+                      <a href="#">
+													<i class="fa fa-twitter"></i>
+												</a>
+                    </li>
+                    <li>
+                      <a href="#">
+													<i class="fa fa-instagram"></i>
+												</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-content text-center">
+                <h4>Jhon Powel</h4>
+                <p>Seo Expert</p>
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Team Area -->
+
+  <!-- Start reviews Area -->
+  <div class="reviews-area hidden-xs">
+    <div class="work-us">
+      <div class="work-left-text">
+        <a href="#">
+						<img src="img/about/2.jpg" alt="">
+					</a>
+      </div>
+      <div class="work-right-text text-center">
+        <h2>working with us</h2>
+        <h5>Web Design, Ready Home, Construction and Co-operate Outstanding Buildings.</h5>
+        <a href="#contact" class="ready-btn">Contact us</a>
+      </div>
+    </div>
+  </div>
+  <!-- End reviews Area -->
 
   <!-- Start portfolio Area -->
   <div id="portfolio" class="portfolio-area area-padding fix">
