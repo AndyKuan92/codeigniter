@@ -168,7 +168,7 @@
               <div class="slider-content text-center">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">Suitable For Retired Landlord, Hotel Or Homestay Business Owner</h2>
+                  <h2 class="title1">Suitable For Landlord, Hotel Or Homestay Business Owner</h2>
                 </div>
                 <!-- layer 2 -->
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
@@ -197,7 +197,7 @@
                 </div>
                 <!-- layer 2 -->
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Wireless Infrastructure To Help Your Business Security</h1>
+                  <h1 class="title2">Wireless Devices To Help Your Business Security</h1>
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
@@ -279,17 +279,62 @@
       </div>
       <div class="row text-center">
         <div class="services-contents">
-          <!-- Start Left services -->
+          <!-- col start -->
           <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="about-move">
               <div class="services-details">
                 <div class="single-services">
                   <a class="services-icon" href="#">
-											<i class="fa fa-code"></i>
+											<i class="fa fa-clock-o"></i>
 										</a>
-                  <h4>Web Development</h4>
+                  <h4>Rental Automation</h4>
                   <p>
-                    We develop custom system for your needs. Digital transformation of your rental business is possible when you meet experienced system developers.
+                    Why spend many time to do repetitive work like preparing rental invoices for your tenants. The system simplifiy the billing related to your tenant's rental and utility charges with the help of technology.
+                  </p> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+											<i class="fa fa-hotel"></i>
+										</a>
+                  <h4>Room Management</h4>
+                  <p>
+                   Setup tenant rental can easily be done with room management functionalities. Record tenant information, tenant check-in, power switch, digital door password features are available.
+                  </p> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+											<i class="fa fa-address-book-o"></i>
+										</a>
+                  <h4>Tenant Selfcare</h4>
+                  <p>
+                    Let your tenants knows about their rental terms, see and do payment for the bills issued to them online. They can download the receipts after their rental payment made.
+                  </p> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+											<i class="fa fa-tv"></i>
+										</a>
+                  <h4>Utility Monitoring</h4>
+                  <p>
+                    Real time utility tracking like electricity and water spent by your tenants with our reliable smart devices. Prevention from bill spike due to illegal activities conducted by tenants.
                   </p> 
                 </div>
               </div>
@@ -301,86 +346,47 @@
               <div class="services-details">
                 <div class="single-services">
                   <a class="services-icon" href="#">
-											<i class="fa fa-camera-retro"></i>
+											<i class="fa fa-bell-o"></i>
 										</a>
-                  <h4>Creative Photographing</h4>
+                  <h4>Notifications And Reminders</h4>
                   <p>
-                    Photography is essential skill to advertise your business. Our photograph expertists can help you to take great pictures of your unit to be leased.
+                    Notification and warning will be sent to tenant with unpaid rental bill. Nevertheless the system can also remind tenant of their room meter electricity balance. 
+                  </p>
                 </div>
               </div>
-              <!-- end about-details -->
             </div>
           </div>
           <div class="col-md-4 col-sm-4 col-xs-12">
-            <!-- end col-md-4 -->
             <div class=" about-move">
               <div class="services-details">
                 <div class="single-services">
                   <a class="services-icon" href="#">
-											<i class="fa fa-puzzle-piece"></i>
+											<i class="fa fa-line-chart"></i>
 										</a>
-                  <h4>Logo Design</h4>
+                  <h4>Analytics</h4>
                   <p>
-                    If you are stuggling to choose a design for your brand or business, we are here to assist you in logo designing with advanced tools.
+                    The system provides visual data reports to make accounting easy for your business. You can download your sales report at anytime.
                   </p>
                 </div>
               </div>
-              <!-- end about-details -->
             </div>
           </div>
           <div class="col-md-4 col-sm-4 col-xs-12">
-            <!-- end col-md-4 -->
             <div class=" about-move">
               <div class="services-details">
                 <div class="single-services">
                   <a class="services-icon" href="#">
-											<i class="fa fa-crosshairs"></i>
+											<i class="fa fa-tags"></i>
 										</a>
-                  <h4>Digital Marketing</h4>
+                  <h4>Free Consultancy</h4>
                   <p>
-                    We help your business reaches target audiences through online marketing with various strategies include social media marketing and SEO optimisation.
+                    The concepts of transforming to a smart home system are still beyond imagination for some people. We are glad provide technical support and suggestion for this revolution.
                   </p>
                 </div>
               </div>
-              <!-- end about-details -->
             </div>
           </div>
-          <!-- End Left services -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <!-- end col-md-4 -->
-            <div class=" about-move">
-              <div class="services-details">
-                <div class="single-services">
-                  <a class="services-icon" href="#">
-											<i class="fa fa-share-alt"></i>
-										</a>
-                  <h4>IoT Implementation</h4>
-                  <p>
-                    With our quality smart products offered, it effortlessly empowers your rental business in term of efficiency and security. We will continously implement more IoT products in our system.
-                  </p>
-                </div>
-              </div>
-              <!-- end about-details -->
-            </div>
-          </div>
-          <!-- End Left services -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <!-- end col-md-4 -->
-            <div class=" about-move">
-              <div class="services-details">
-                <div class="single-services">
-                  <a class="services-icon" href="#">
-											<i class="fa fa-ticket"></i>
-										</a>
-                  <h4>Customer Support</h4>
-                  <p>
-                    We also provide support to your 24/7 regarding the system or application you are using. 
-                  </p>
-                </div>
-              </div>
-              <!-- end about-details -->
-            </div>
-          </div>
+          <!-- col end -->
         </div>
       </div>
     </div>
